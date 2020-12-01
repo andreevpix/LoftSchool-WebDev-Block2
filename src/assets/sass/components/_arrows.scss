@@ -1,0 +1,25 @@
+.arrow__prev {
+    background: url('../img/icons/arrow_prev.svg') no-repeat;
+
+    left: 60.5px;
+}
+
+.arrow__next {
+    background: url('../img/icons/arrow_next.svg') no-repeat;
+
+    right: 60.5px;
+}
+
+.arrow__prev,
+.arrow__next {
+    content: '';
+    
+    width: 13.5px;
+    height: 27px;
+
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,40 @@
+.team {
+    padding-block-start: 65px;
+
+    text-align: center;
+}
+
+.team__heading {
+    margin-block-end: 50px;
+    
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.team__users {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team__user {
+    max-width: 220px;
+}
+
+.team__userInformation {
+    padding: 20px 0 35px;
+
+    text-align: center;
+}
+
+.team__userName {
+    margin-block-end: 5px;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.team__userQualification {
+    color: $grey;
+}

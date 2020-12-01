@@ -1,0 +1,59 @@
+.reviews {
+    text-align: center;
+}
+
+.reviews__heading {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+
+    padding: 42px;
+    margin-block-end: 15px;
+
+    background: url('../img/sections/leaf.png') top 10% right no-repeat,
+                url('../img/sections/ellipse.png') top -60px center no-repeat;
+    background-color: $greyLight;
+}
+
+.review__author {
+    max-width: 253px;
+}
+
+.review__content {
+    width: 60%;
+    padding-inline-start: 40px;
+}
+
+.review__title {
+    font-size: 27px;
+}
+
+.review__text {
+    padding: 10px 0 25px;
+}
+
+
+.reviews__authors {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.reviews__author {
+    max-width: 74px;
+
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        content: '';
+
+        box-shadow: 0 0 0 4pt #365A49;
+        border-radius: 50%;
+
+        cursor: pointer;
+    }
+}

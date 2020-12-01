@@ -1,0 +1,21 @@
+.recomendations {
+    height: 650px;
+
+    overflow: hidden;
+}
+
+.recomendation__background {
+    width: 100%;
+    position: absolute;
+
+    z-index: -1;
+}
+
+.recomendation__heading {
+    margin-block-start: 110px;
+    margin-inline-start: 85px;
+
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+.features {
+    display: flex;
+}
+
+.feature {
+    display: flex;
+
+    &:not(:last-of-type) {
+        margin-inline-end: 8px;
+    }
+}
+
+.feature__icon {
+    min-width: 38px;
+    height: 100%;
+
+    margin-inline-end: 15px;
+}
+
+.feature__title {
+width: 40%;
+    color: white;
+}

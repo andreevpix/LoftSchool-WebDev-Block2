@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+    min-height: 100%;
+
+    margin-block-end: 50px;
+    padding-block-start: 25px;
+    padding-block-end: 50px;
+
+    background: url('../img/sections/chocolates.png') center right 10% no-repeat,
+                url('../img/sections/header_leaf.png') bottom right / 500px 648px no-repeat;
+    background-color: #61C4D9;
+
+    position: relative;
+
+    &:after {
+        content: url('../img/sections/header-leaf.png');
+
+        left: 35px;
+    }
+
+    &:before {
+        content: url('../img/sections/header__leaf_right.png');
+
+        right: 35px;
+    }
+
+    &:after,
+    &:before {
+        display: block;
+
+        position: absolute;
+        bottom: -50px;
+    }
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+
+    & li {
+        position: relative;
+
+
+        &::after {
+            content: '';
+    
+            background: white;
+    
+            width: 0;
+    
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+
+        transition: all .2s ease-in-out;
+
+        }
+
+        &:hover::after {
+            width: 100%;
+            height: 2px;
+
+        }
+    }
+
+    & li:not(:last-of-type) {
+        margin-inline-end: 25px;
+    }
+}
+
+.header__menuLink {
+    color: white;
+    text-decoration: none;
+}
+
+.header__hero {
+    width: 40%;
+}
+
+.header__title {
+    color: white;
+    text-transform: uppercase;
+}
+
+.header__description {
+    padding: 20px 0 60px;
+
+    color: white;
+}

@@ -1,0 +1,39 @@
+.btn {
+    padding: 20px 40px;
+    
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-radius: 100px;
+
+    &__white {
+        background: white;
+
+        color: $green;
+
+        &:hover {
+            background: $greenTwo;
+
+            color: white;
+        }
+        
+    }
+
+    &__green {
+        background: $greenTwo;
+
+        color: white;
+
+        &:hover {
+            background: white;
+
+            color: $green;
+        }
+    }
+
+    &__white,
+    &__green {
+        transition: background .2s ease-in-out;
+    }
+}

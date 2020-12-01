@@ -1,0 +1,102 @@
+@import "vars";
+
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+
+
+/* Default styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: $baseFontSize;
+    font-family: 'Alegreya Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+
+    color: $black;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+img {
+    display: block;
+
+    max-width: 100%;
+}
+
+footer {
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: $containerWidth + 20px;
+
+    margin: 0 auto;
+    padding: 0 80px;
+
+    position: relative;
+}
+
+.container {
+    width: $containerWidth;
+
+    margin: 0 auto;
+}
+
+
+/* Components */
+@import './components/index';
+
+/* Blocks */
+@import './blocks/header';
+@import './blocks/products';
+@import './blocks/advantages';
+@import './blocks/recomendations';
